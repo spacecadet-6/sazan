@@ -14,3 +14,23 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+input,
+textarea,
+button,
+select {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+}
