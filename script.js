@@ -1,21 +1,23 @@
 
-new Splide('.gallery__slider', {
-    type: 'loop',
-    drag: 'free',
-    gap: '40px',
-     breakpoints: {
-        650: {
-            gap: '13px',
+if (document.querySelector('.gallery__slider')) {
+    new Splide('.gallery__slider', {
+        type: 'loop',
+        drag: 'free',
+        gap: '40px',
+        breakpoints: {
+            650: {
+                gap: '13px',
+            },
         },
-    },
-    autoWidth: true,
-    arrows: false,
-    pagination: false,
-    autoScroll: {
-        speed: 1,
-        pauseOnHover: false,
-    },
-}).mount(window.splide.Extensions);
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: 1,
+            pauseOnHover: false,
+        },
+    }).mount(window.splide.Extensions);
+}
 
 const menuBtn = document.querySelector('.header__menu');
 const burgerMenu = document.querySelector('.header__menu-burger');
