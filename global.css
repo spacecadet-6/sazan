@@ -102,6 +102,8 @@
     display: none;
 }
 
+
+
 .header {
     position: sticky;
     top: 0;
@@ -381,6 +383,10 @@
     border-radius: 2px;
 }
 
+.footer{
+    position: relative;
+}
+
 .footer__logo {
     width: 100%;
     margin-top: 117px;
@@ -394,7 +400,17 @@
     display: none;
 }
 
+.footer__decor{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
+@media(max-width:830px){
+    .footer__decor{
+        display: none;
+    }
+}
 
 @media(max-width:751px) {
 
@@ -497,6 +513,14 @@
     }
 
      .footer__logo-mobile{
+        display: block;
+    }
+
+    .desktop-br{
+        display: none;
+    }
+
+    .mobile-br{
         display: block;
     }
 
