@@ -60,7 +60,30 @@ slider.addEventListener('mousemove', (e) => {
     slider.scrollLeft = scrollLeft - (e.pageX - startX);
 });
 
-console.log(
-    document.querySelector('.map__content').scrollWidth,
-    document.querySelector('.map__content').clientWidth
-);
+
+const projectNav = document.querySelector('.project__nav-content');
+
+let navIsDown = false;
+let navStartX;
+let navScrollLeft;
+
+projectNav.addEventListener('mousedown', (e) => {
+    navIsDown = true;
+    navStartX = e.pageX;
+    navScrollLeft = projectNav.scrollLeft;
+});
+
+window.addEventListener('mouseup', () => {
+    navIsDown = false;
+});
+
+window.addEventListener('mousemove', (e) => {
+    if (!navIsDown) return;
+
+    e.preventDefault();
+    projectNav.scrollLeft = navScrollLeft - (e.pageX - navStartX);
+});
+
+projectNav.addEventListener('dragstart', (e) => {
+    e.preventDefault();
+});

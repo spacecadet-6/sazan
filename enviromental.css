@@ -140,6 +140,10 @@
     padding: 0 40px;
 }
 
+.enviromental__img img{
+    width: 100%;
+}
+
 .eia__text-single{
     font-family: 'Gilroy';
     font-weight: 500;
@@ -203,4 +207,8 @@
     letter-spacing: 1%;
     color: #824920;
     max-width: 590px;
+}
+
+.eia__last-text--mobile{
+    display: none;
 }

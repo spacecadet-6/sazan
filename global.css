@@ -102,8 +102,6 @@
     display: none;
 }
 
-
-
 .header {
     position: sticky;
     top: 0;
@@ -416,6 +414,11 @@
 
     .header__logo {
         margin-left: 34px;
+    }
+
+    .contact__form-fields input{
+        max-width: 713px;
+        width: 100%;
     }
 
 }

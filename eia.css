@@ -1,0 +1,179 @@
+
+@media(max-width:869px){
+    .project__nav-container{
+        overflow: hidden;
+    }
+    .project__nav-content{
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+        margin-bottom: 0;
+        cursor: grab;
+        user-select: none;
+        padding-right: 21px;
+    }
+
+    .hero__container{
+        padding: 90px 30px;
+    }
+
+    .eviromental__nav-container{
+        margin-top: 90px;
+    }
+
+    .hero__footer{
+        margin-top: 80px;
+    }
+
+    .eia__text-single{
+        padding: 90px 30px;
+    }
+
+    .eia__last-conteiner{
+        padding-top: 90px;
+    }
+
+    .eia__last-conteiner{
+        gap: 90px;
+    }
+}
+
+@media(max-width:767px){
+    .hero__title{
+        text-align: center;
+    }
+}
+
+@media(max-width:650px){
+
+    .header{
+        padding-bottom: 20px;
+    }
+
+    .project__nav-content{
+        padding-top: 18px;
+        gap: 25px;
+        padding-left: 21px;
+    }
+
+    .project__nav-item{
+        font-size: 8px;
+        padding-bottom: 14px;
+    }
+
+    .project__nav-item--active{
+        letter-spacing: 10%;
+        font-weight: 700;
+    }
+
+    .hero__container{
+        padding: 55px 30px;
+    }
+
+    .hero__title{
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .eviromental__nav-container{
+        margin-top: 53px;
+        gap: 40px;
+        padding-top: 11px;
+    }
+
+    .eviromental__nav-item{
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+
+    .hero__footer{
+        margin-top: 54px;
+    }
+
+    .eia__text-single{
+        padding: 52px 50px 60px;
+    }
+
+    .eia__last-text{
+        padding: 0 30px;
+    }
+
+    .eia__last-conteiner{
+        gap: 78px;
+        padding-top: 70px;
+        padding-bottom: 16px;
+    }
+
+    
+
+    .hero__footer-title{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .hero__footer-subtitle{
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+    
+
+    .enviromental__img{
+        padding: 0 10px;
+    }
+
+    .eia__text-single{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .eia__last-text--header{
+        font-size: 13px;
+        line-height: 1.5;
+        letter-spacing: 4%;
+    }
+
+    .eia__last-text{
+        gap: 21px;
+    }
+
+    .eia__last-text--footer{
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .eia__last-text--desktop{
+        display: none;
+    }
+
+    .eia__last-text--mobile{
+        display: block;
+    }
+
+}
+
+@media(max-width:540px){
+    .project__nav-content{
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
+    }
+
+    .project__nav-content:active {
+    cursor: grabbing;
+    }
+
+    .project__nav-item {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+}
+
+
+@media(max-width:400px){
+     .mobile-br{
+        display: block;
+    }
+}
