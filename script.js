@@ -87,3 +87,4 @@ window.addEventListener('mousemove', (e) => {
 projectNav.addEventListener('dragstart', (e) => {
     e.preventDefault();
 });
+
