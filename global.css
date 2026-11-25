@@ -251,17 +251,17 @@
     background: #F9EFE6;
 }
 
-.header--scrolled .header__menu span,
-.header--scrolled .header__language span,
-.header--scrolled .header__right>span {
+.header .header__menu span,
+.header .header__language span,
+.header .header__right>span {
     color: #824920;
 }
 
-.header--scrolled svg path[fill="white"] {
+.header svg path[fill="white"] {
     fill: #824920;
 }
 
-.header--scrolled svg path[stroke="white"] {
+.header svg path[stroke="white"] {
     stroke: #824920;
 }
 
@@ -379,6 +379,12 @@
     font-family: 'Helvetica Now Display';
     font-weight: 500;
     border-radius: 2px;
+    transition: 0.5s all ease-out;
+}
+
+.contact__form-btn:hover{
+    background-color: #814920;
+    color: #FFFFFF;
 }
 
 .footer{
