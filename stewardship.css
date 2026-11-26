@@ -16,12 +16,29 @@
     max-width: 530px;
 }
 
-.stewardsip__double-img{
+.stewardship__double-img{
+    background: linear-gradient(180deg, #F9EFE6 0%, #D8D2C9 100%);
+}
+
+.stewardship__double-container{
     padding: 0 10px;
     margin: 0 auto;
     max-width: 1300px;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+}
+
+.stewardship__img-m{
+    max-width: 620px;
+    width: 100%;
+}
+
+.stewardship__img-m img{
+    width: 100%;
+}
+
+.gallery{
+    background-color: #D8D2C9;
 }
 
 
@@ -213,6 +230,10 @@
     line-height: 1.5;
 }
 
+.development{
+    background-color: #D8D2C9;
+}
+
 .developmtent__container{
     max-width: 740px;
     width: 100%;
@@ -249,21 +270,32 @@
     letter-spacing: 2%;
 }
 
+.development__content-text--active{
+    color: #824920;
+}
+
 .development__footer{
     max-width: 550px;
     text-align: center;
     margin-top: 51px;
 }
 
+.statistic{
+    background-color: #D8D2C9;
+}
 
 .statistic__container{
     max-width: 1440px;
     width: 100%;
-    padding: 108px 0;
+    padding: 108px 40px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.statistic__container div img{
+    width: 100%;
 }
 
 .statistic__content{
@@ -271,7 +303,7 @@
     max-width: 1360px;
     width: 100%;
     display: flex;
-    background-color: #C5B7A1;
+    background: rgba(0, 0, 0, 0.03);
     align-items: center;
     justify-content: center;
     padding-top: 75px;
@@ -308,6 +340,10 @@
     text-transform: none;
 }
 
+.principles{
+    background-color: #D8D2C9;
+}
+
 .principles__container{
     max-width: 1440px;
     width: 100%;
@@ -315,5 +351,147 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 84px;
+    padding: 10px 40px 78px;
 }
+
+.principles__content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1243px;
+    width: 100%;
+    row-gap: 52px;
+    column-gap: 43px;
+    margin-top: 111px;
+    margin-left: -32px;
+    
+}
+
+.principles__content-item{
+    max-width: 600px;
+    width: 100%;
+    padding: 34px 0 0;
+    border-top: 0.5px solid rgba(130, 73, 32, 0.4);
+}
+
+.principles__content-item:nth-child(5){
+    padding-bottom: 52px;
+    border-bottom: 0.5px solid rgba(130, 73, 32, 0.4);
+}
+
+.principles__content-item:nth-child(6){
+    padding-bottom: 52px;
+    border-bottom: 0.5px solid rgba(130, 73, 32, 0.4);
+}
+
+
+.principles__item-header{
+    display: flex;
+    gap: 20px;
+}
+
+.principles__header-number{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 4%;
+    color: #824920;
+}
+
+.principles__header-title{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #824920;
+}
+
+.principles__item-text{
+    padding-left: 32px;
+    margin-top: 27px;
+    max-width: 550px;
+}
+
+.principles__img{
+    width: 100%;
+    margin-top: 37px;
+    margin-left: 15px;
+}
+
+.principles__img img{
+    width: 100%;
+}
+
+@media(max-width:869px){
+    .project__nav-container{
+        overflow: hidden;
+    }
+    .project__nav-content{
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+        margin-bottom: 0;
+        cursor: grab;
+        user-select: none;
+        padding-right: 21px;
+    }
+
+      .eviromental__nav-container{
+        margin-top: 90px;
+    }
+}
+
+@media(max-width:650px){
+
+    .header{
+        padding-bottom: 20px;
+    }
+
+    .project__nav-content{
+        padding-top: 18px;
+        gap: 25px;
+        padding-left: 21px;
+    }
+
+    .project__nav-item{
+        font-size: 8px;
+        padding-bottom: 14px;
+    }
+
+    .project__nav-item--active{
+        letter-spacing: 10%;
+        font-weight: 700;
+    }
+
+        .eviromental__nav-container{
+        margin-top: 53px;
+        gap: 40px;
+        padding-top: 11px;
+    }
+
+     .eviromental__nav-item{
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+
+    @media(max-width:540px){
+    .project__nav-content{
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
+    }
+
+    .project__nav-content:active {
+    cursor: grabbing;
+    }
+
+    .project__nav-item {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+}
+
+
+}   
